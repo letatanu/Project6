@@ -28,7 +28,7 @@ public class Flight extends AbstractFlight implements Comparable<Flight> {
      * @param arriveDateTime
      *        Arrival date time (am/pm)
      */
-    Flight(String flightNumber, String src, String departDateTime, String dest, String arriveDateTime ) throws IllegalArgumentException {
+    public Flight(String flightNumber, String src, String departDateTime, String dest, String arriveDateTime) throws IllegalArgumentException {
         super();
         this.flightNumber = validateNumber(flightNumber);
 

@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Project6</string>
+    <string name="source">. Source</string>
+    <string name="flight_number">. Flight Number</string>
+    <string name="flight">Flight:</string>
+    <string name="airline_name">Airline Name</string>
+    <string name="depart_date_time">. Depart Date Time.</string>
+    <string name="add">Add</string>
+    <string name="arrival_date_time">. Arrival Date Time</string>
+    <string name="destination">. Destination</string>
+    <string name="you_can_add_new_airline_with_a_flight_from_here">You can add new airline with a flight from here.</string>
+    <string name="project_6_nhut_le">Project 6 - Nhut Le</string>
+    <string name="add_airline">Add airline</string>
+    <string name="search">Search</string>
+    <string name="search_airline">Search Airline</string>
+    <string name="nothing_to_show">Nothing to Show</string>
 </resources>
