@@ -43,6 +43,14 @@
             android:text="@string/search"
             android:onClick="search_view"
             tools:ignore="OnClick" />
+        <Button
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="About"
+            android:onClick="about"
+            tools:ignore="OnClick" />
     </LinearLayout>
 
 
