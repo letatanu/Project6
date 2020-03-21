@@ -40,10 +40,10 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         errorAlert = alert.create();
-        errorAlert.setMessage("In this project you will use Android to implement a small device application for your Airline application.\n" + "" +
-                "For this project you will write an application using Android that has all of the functionality of the previous\n" +
-                "assignments: creating an airline, entering flights, pretty printing an airlint and its flights, searching for flights,\n" +
-                "etc.");
+        errorAlert.setTitle("About");
+        errorAlert.setMessage("In this project, it will use Android to implement a small device application for Airline application.\n" + "" +
+                "1. Adding new flight: input appropriate information of airline + the flight associated witht to add it to the database. \n" +
+                "2. Search: looking for the information of an airline from the database.");
         errorAlert.show();
     }
 }

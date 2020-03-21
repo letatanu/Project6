@@ -31,16 +31,16 @@ public class Search extends AppCompatActivity {
         Airline airline = null;
         try {
             airline = (Airline) textParser.parse();
-            if (!airline.getName().equals(airlineName)) {
-                Toast.makeText(this, "The airline name is not as same as the airline name from the file", Toast.LENGTH_LONG).show();
-                System.err.println("The airline name is not as same as the airline name from the file");
-            }
-            else {
-                String result = getPrettyPrint(airline);
-                Intent intent = new Intent(this, Result.class);
-                intent.putExtra("result", result);
-                startActivity(intent);
-            }
+//            if (!airline.getName().equals(airlineName)) {
+//                Toast.makeText(this, "The airline name is not as same as the airline name from the file", Toast.LENGTH_LONG).show();
+//                System.err.println("The airline name is not as same as the airline name from the file");
+//            }
+//            else {
+            String result = getPrettyPrint(airline);
+            Intent intent = new Intent(this, Result.class);
+            intent.putExtra("result", result);
+            startActivity(intent);
+
         } catch (ParserException e) {
             Toast.makeText(this, "The airline is not existing", Toast.LENGTH_LONG).show();
         }
@@ -59,7 +59,7 @@ public class Search extends AppCompatActivity {
 
         int l = flights.size();
 
-        System.out.println("The airline is " + abstractAirline.getName() + " with " + Integer.toString(l) + " flights following: ");
+        result.append("The airline is ").append(abstractAirline.getName()).append(" with ").append(Integer.toString(l)).append(" flights following: \n");
         for (int i = 0; i < l; i++) {
             result.append("The flight ").append(i).append("\n");
             Flight flight = (Flight) flights.get(i);
