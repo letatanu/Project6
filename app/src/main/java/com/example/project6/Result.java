@@ -2,6 +2,7 @@ package com.example.project6;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
@@ -16,5 +17,10 @@ public class Result  extends AppCompatActivity {
         String result = i.getStringExtra("result");
         TextView re = findViewById(R.id.show_result);
         re.setText(result);
+    }
+
+    public void ok(View view) {
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
     }
 }
